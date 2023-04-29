@@ -43,8 +43,8 @@
           });
         torch = pyprev.pytorch-bin.overridePythonAttrs (old: {
           src = pkgs.fetchurl {
-            url = "https://download.pytorch.org/whl/cu116/torch-1.13.1%2Bcu116-cp39-cp39-linux_x86_64.whl";
-            sha256 = "sha256-20V6gi1zYBO2/+UJBTABvJGL3Xj+aJZ7YF9TmEqa+sU=";
+            url = "https://download.pytorch.org/whl/cu117/torch-1.13.0%2Bcu117-cp39-cp39-linux_x86_64.whl";
+            sha256 = "sha256-zQdT1u8WmmpdciS1Hi/fGsrHQPHvwyKml0zIGXU1B2s=";
           };
         });
         torchrl = pyprev.torchrl.overridePythonAttrs (old: {
