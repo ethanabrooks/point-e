@@ -27,6 +27,7 @@ ipython = "^8.4.0"
 mypy = "^0.971"
 flake8 = "^5.0.4"
 pre-commit = "^3.2.2"
+jupyterlab = "^3.6.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
