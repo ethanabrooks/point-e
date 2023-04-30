@@ -19,6 +19,8 @@ requests = "^2.29.0"
 tqdm = "^4.65.0"
 scipy = ">=1.8,<1.9.2"
 scikit-image = "^0.20.0"
+CLIP = {git = "https://github.com/openai/CLIP.git", rev = "main"}
+ftfy = "^6.1.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.6.0"

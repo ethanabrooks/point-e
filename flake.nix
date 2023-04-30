@@ -50,6 +50,17 @@
         torchrl = pyprev.torchrl.overridePythonAttrs (old: {
           preFixup = "addAutoPatchelfSearchPath ${pyfinal.torch}";
         });
+        clip = pyprev.clip.overridePythonAttrs (old: {
+          buildInputs =
+            old.buildInputs
+            ++ (with pyfinal; [
+              setuptools
+              ftfy
+              torchvision
+              tqdm
+              regex
+            ]);
+        });
       };
       poetryEnv = pkgs.poetry2nix.mkPoetryEnv {
         python = pkgs.python39;
