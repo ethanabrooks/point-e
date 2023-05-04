@@ -5,3 +5,5 @@ point_e_model_cache/
 .DS_Store
 .direnv/
 .env
+
+point_e/examples/dalle2pc.ipynb
