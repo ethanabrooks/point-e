@@ -7,3 +7,4 @@ point_e_model_cache/
 .env
 
 point_e/examples/dalle2pc.ipynb
+point_e/examples/outputs/*
