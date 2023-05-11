@@ -23,6 +23,9 @@ CLIP = {git = "https://github.com/openai/CLIP.git", rev = "main"}
 ftfy = "^6.1.1"
 regex = "^2023.3.23"
 openai = "^0.27.6"
+open3d = "^0.17.0"
+scikit-learn = "^1.2.2"
+addict = "^2.4.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.6.0"

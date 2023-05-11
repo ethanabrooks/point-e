@@ -41,6 +41,27 @@
               ];
             patches = [./mujoco-py.patch];
           });
+        open3d =
+          pyprev
+          .open3d
+          .overridePythonAttrs (old: {
+            buildInputs =
+              old.buildInputs
+              ++ (with pyfinal; [
+                pillow
+                matplotlib
+                pyquaternion
+                tqdm
+                pyyaml
+                pandas
+              ]);
+            propagatedBuildInputs =
+              old.propagatedBuildInputs
+              ++ (with pyfinal; [
+                addict
+                scikit-learn
+              ]);
+          });
         torch = pyprev.pytorch-bin.overridePythonAttrs (old: {
           src = pkgs.fetchurl {
             url = "https://download.pytorch.org/whl/cu117/torch-1.13.0%2Bcu117-cp39-cp39-linux_x86_64.whl";
