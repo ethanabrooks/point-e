@@ -26,6 +26,7 @@ openai = "^0.27.6"
 open3d = "^0.17.0"
 scikit-learn = "^1.2.2"
 addict = "^2.4.0"
+trimesh = "^3.21.6"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.6.0"

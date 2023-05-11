@@ -4490,6 +4490,26 @@ docs = ["myst-parser", "pydata-sphinx-theme", "sphinx"]
 test = ["argcomplete (>=2.0)", "pre-commit", "pytest", "pytest-mock"]
 
 [[package]]
+name = "trimesh"
+version = "3.21.6"
+description = "Import, export, process, analyze and view triangular meshes."
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "trimesh-3.21.6-py3-none-any.whl", hash = "sha256:bfc97269e4cd358b418521aedc05bc9f7b9ea4e819ed843126c980c9663b59c7"},
+    {file = "trimesh-3.21.6.tar.gz", hash = "sha256:fa016a6406c62e834374e99bc4494ac1bd1063b0497ce519543efcf3c4fa794f"},
+]
+
+[package.dependencies]
+numpy = "*"
+
+[package.extras]
+all = ["chardet", "colorlog", "glooey", "jsonschema", "lxml", "mapbox-earcut", "meshio", "networkx", "pillow", "psutil", "pycollada", "pyglet (<2)", "python-fcl", "requests", "rtree", "scikit-image", "scipy", "setuptools", "shapely", "svg.path", "sympy", "xatlas", "xxhash"]
+easy = ["chardet", "colorlog", "jsonschema", "lxml", "mapbox-earcut", "networkx", "pillow", "pycollada", "requests", "rtree", "scipy", "setuptools", "shapely", "svg.path", "sympy", "xxhash"]
+test = ["autopep8", "coveralls", "ezdxf", "pyinstrument", "pytest", "pytest-cov", "ruff"]
+
+[[package]]
 name = "typing-extensions"
 version = "4.5.0"
 description = "Backported and Experimental Type Hints for Python 3.7+"
@@ -4902,4 +4922,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.12"
-content-hash = "8dc119a70b82c857f6e7d6fa4bc313604c4d790bec4b82727a12e1409c2e7932"
+content-hash = "58cad276e13d0cb81ff4723d381c786c40f66797a5403dd522d76a81aa3e8cee"
